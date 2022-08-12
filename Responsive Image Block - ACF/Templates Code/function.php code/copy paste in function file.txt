@@ -1,0 +1,19 @@
+
+/* ACF Image Responsive Block*/
+add_action('acf/init', 'my_acf_init_block_types');
+function my_acf_init_block_types() {
+
+    // Check function exists.
+    if( function_exists('acf_register_block_type') ) {
+
+        // register a responsive image block.
+        acf_register_block_type(array(
+            'name'              => 'responsiveimage',
+            'title'             => __('Responsive Image Block'),
+            'description'       => __('A custom responsive image block to add images for media screens.'),
+            'render_template'   => '/blocks/responsive-image/responsive-image.php',
+            'category'          => 'formatting',
+            'keywords'          => array( 'responsive', 'rimage', 'image' ),
+        ));
+    }
+}
