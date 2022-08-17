@@ -25,6 +25,6 @@ $className = get_field('css_class');
     } // end of while
   } //end of if 
   ?>
-  <img src="<?php echo $desktopImage; ?>" <?php if($altTag){ ?> alt="<?php echo $altTag; ?>" <?php } ?> style="width:auto;">
+  <img src="<?php echo $desktopImage; ?>" <?php if($altTag){ ?> alt="<?php echo $altTag; ?>" <?php } ?> />
   
 </picture>
